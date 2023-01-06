@@ -115,3 +115,41 @@ ol{
 ol li:before{
     content: '✓';
 }
+
+
+/* My Plans Section start */
+
+.my-plans{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:110px;
+    
+}
+.my-plans h2{
+    width: 288px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+    text-align: center;
+}
+.plans-list{
+    text-align: center;
+}
+.plans-list h1{
+    font-weight: 700;
+    font-size:30px;
+    line-height:35px;
+    text-align:center;
+    color:#151414;
+    margin-top:30px;
+    margin-bottom:16px;
+}
+.plans-list h2{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #737272;
+}

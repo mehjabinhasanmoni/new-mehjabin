@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.w-100{
+    width:100%;
+}
+
+.w-70{
+    width:100%;
+}
+
+.w-30{
+    width:100%;
+}
+
+.container{
+    width:1700px;
+
+   
+
+}
+.footer{
+    background:#000000;
+}
+
+.common-padding{
+    padding:100px 10px;
+}
+
+.btn-primary{
+    padding:20px;
+    background-color: tomato;
+    font-size:24px;
+    border: none;
+    color:#ffffff;
+    border-radius: 10px;
+}
+
+/* Bannar saction styles*/
+
+.banner{
+    background-image: url('../images/banner/banner1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 808px;
+    width: 100%;
+}
+
+.content{
+    text-align: right;
+    padding-top: 216px;
+    padding-left:950px;
+    padding-right: 180px;
+    height: 808px;
+    
+}
+
+.content h1{
+    font-weight: 700;
+    font-size: 65px;
+    color: #151414;
+    
+}
+
+.content-description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444343;
+    margin:30px 0;
+}
+
+/* Section My failure start */
+.my-failure{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:130px 0;
+}
+.my-failure .sad-img{
+    width: 569px;
+    height: 723.3px;
+    margin-left:206px;
+    margin-right:87px;
+}
+.my-failure  .failure-details{}
+.my-failure  .failure-title{
+    width: 288px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #151414;
+}
+.my-failure  .failure-description{
+    font-size: 16px;
+    line-height: 35px;
+    margin-top:24px;
+    margin-bottom: 16px;
+    color: #444343;
+    
+}
+.failure-list{
+    color: #444343;
+    line-height: 35px;
+    font-size: 16px;
+
+}
+ol{
+    list-style: none;
+}
+ol li:before{
+    content: '✓';
+}

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .w-100 {
@@ -39,6 +39,12 @@
   border: none;
   color: #ffffff;
   border-radius: 10px;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #b40a57;
 }
 
 .btn-white {
@@ -47,22 +53,29 @@
   border: none;
   color: #db2777;
   border-radius: 5px;
-  margin: 10px 63px;
-  padding: 23px 35px;
+  padding: 20px 30px;
   font-weight: 600;
-  line-height: 23px;
   text-align: center;
+  transition: 500ms;
+  cursor: pointer;
 }
 
+.btn-white:hover {
+  background-color: #db2777;
+  color: #ffffff;
+}
+
+strong{
+    color: #db2777;
+}
 /* Bannar saction styles*/
 
 .banner {
-  background-image: url("../images/banner/banner1.png");
+  background-image: url("../images/banner/designer_girl.svg");
+  background-color: rgba(0, 0, 0, 0.05);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  padding: 130px 0;
+  background-position: 200px -10px;
+  padding: 140px 0;
 }
 
 .banner-flex {
@@ -72,13 +85,23 @@
 
 .content {
   text-align: right;
-  width: 500px;
+  width: 600px;
 }
 
 .content h1 {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 65px;
   color: #151414;
+}
+
+.content h1 small{
+    color: #424242;
+    font-weight: 400;
+  }
+
+.content p{
+    font-size: 20px;
+    margin:20px 0
 }
 
 .content-description {
@@ -89,53 +112,54 @@
   margin: 30px 0;
 }
 
-/* Section My failure start */
-.my-failure {
+/* Section My success start */
+.my-success {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.my-failure img {
+.my-success img {
   width: 100%;
 }
-.my-failure .failure-details {
+.my-success .success-details {
   padding: 10px 20px;
 }
-.my-failure .failure-title {
+.my-success .success-title {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #151414;
 }
-.my-failure .failure-description {
+.my-success .success-description {
   font-size: 16px;
   line-height: 35px;
   margin-top: 24px;
   margin-bottom: 16px;
   color: #444343;
 }
-.failure-list {
+.success-list {
   color: #444343;
   line-height: 35px;
   font-size: 16px;
 }
-ol {
+ol,
+ul {
   list-style: none;
 }
-ol li:before {
+ol li:before,
+ul li:before {
   content: "✓";
 }
 
 /* My Plans Section start */
-.my-plans{
-    text-align: center;
- 
-    
+.my-plans-full {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-.my-plans h1{
-    font-size: 35px;
-    margin-bottom: 30px;
+.my-plans h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
 }
 
 .my-plans-wrapper {
@@ -146,71 +170,76 @@ ol li:before {
 }
 
 .plans-list {
-    text-align: center;
-    width: 250px;
-  }
+  text-align: center;
+  width: 250px;
+}
+.plans-list img {
+  height: 100px;
+}
 
 .plans-list h2 {
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 35px;
-    text-align: center;
-    color: #151414;
-    margin-top: 30px;
-    margin-bottom: 16px;
-  }
-.my-plans h3 {
- 
   font-weight: 700;
-  font-size: 14px;
-  line-height: 47px;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  color: #151414;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.my-plans p {
+  font-weight: 600;
+  font-size: 16px;
   color: #737272;
   text-align: center;
 }
 
-
-
 /* What i do section styles */
-
 
 .section-description {
   color: #757575;
   font-size: 18px;
   margin-bottom: 30px;
 }
-.skills-full{
-    background-image: url('../images//myplan-bg.svg');
-    background-repeat: no-repeat;
+.packages-full {
+  /* background-image: url('../images//myplan-bg.svg');
+    background-repeat: no-repeat; */
 }
-.skills{
-   
+.packages .btn-primary {
+  padding: 20px;
+  margin: 30px auto 0;
+  font-size: 16px;
+  display: block;
 }
-.skills h1{
-    font-size: 35px;
-    margin-bottom: 30px;
-    text-align: center;
+.packages h1 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  text-align: center;
 }
-.skills-list {
+.packages-list {
   display: flex;
   gap: 24px;
 }
 
-.skill {
+.package {
   background: #fff;
   box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   padding: 30px;
 }
 
-.skill-title {
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.package img {
+  width: 40%;
 }
 
-.skill-description {
+.package-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.package-description {
   color: #757575;
+  margin-bottom: 20px;
 }
 
 /* Background image section  */
@@ -218,21 +247,98 @@ ol li:before {
 .writter-mind {
   background-image: linear-gradient(
       90deg,
-      #f15b22 0%,
+      #db2777 0%,
       rgba(241, 91, 34, 0) 100%
     ),
-    url("../images/watch.png");
-  width: 1140px;
-  height: 300px;
+    url("../images/watch.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
   border-radius: 8px;
-  margin: 120px auto;
+  margin: 0 auto 100px;
+  padding: 50px;
 }
 
-.writter-mind p {
+.writter-mind h2 {
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
   color: #ffffff;
-  padding-top: 68px;
-  padding-left: 63px;
+  margin-bottom: 20px;
+}
+
+/* Footer Section Start */
+
+.footer {
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.future h1 {
+  font-weight: 700;
+}
+.future p {
+  margin-top: 10px;
+  line-height: 28px;
+}
+.socials {
+  margin-top: 20px;
+  display: flex;
+}
+.socials a {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: 500ms;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+.socials a i {
+  font-size: 20px;
+}
+
+.fb {
+  color: #006aff;
+}
+.fb:hover {
+  border-color: #006aff;
+}
+.tw {
+  color: #1da1f2;
+}
+.tw:hover {
+  border-color: #1da1f2;
+}
+.yp {
+  color: #ff0000;
+}
+.yp:hover {
+  border-color: #ff0000;
+}
+
+.subscribe {
+}
+.subscribe input {
+  padding: 20px 15px;
+  border-radius: 8px;
+  background: #000;
+  border: 2px solid #fff;
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 16px;
+  width: 100%;
+  transition: 500ms;
+}
+
+.subscribe input:hover {
+  border-color: #db2777;
 }

@@ -1,155 +1,238 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: 'Open Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-.w-100{
-    width:100%;
+.w-100 {
+  width: 100%;
 }
 
-.w-70{
-    width:100%;
+.w-70 {
+  width: 70%;
 }
 
-.w-30{
-    width:100%;
+.w-50 {
+  width: 50%;
 }
 
-.container{
-    width:1700px;
-
-   
-
-}
-.footer{
-    background:#000000;
+.w-30 {
+  width: 30%;
 }
 
-.common-padding{
-    padding:100px 10px;
+.container {
+  width: 1160px;
+  margin: auto;
+}
+.footer {
+  background: #000000;
 }
 
-.btn-primary{
-    padding:20px;
-    background-color: tomato;
-    font-size:24px;
-    border: none;
-    color:#ffffff;
-    border-radius: 10px;
+.common-padding {
+  padding: 100px 0;
+}
+
+.btn-primary {
+  padding: 20px;
+  background-color: #db2777;
+  font-size: 24px;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.btn-white {
+  background-color: #ffffff;
+  font-size: 24px;
+  border: none;
+  color: #db2777;
+  border-radius: 5px;
+  margin: 10px 63px;
+  padding: 23px 35px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: center;
 }
 
 /* Bannar saction styles*/
 
-.banner{
-    background-image: url('../images/banner/banner1.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 808px;
-    width: 100%;
+.banner {
+  background-image: url("../images/banner/banner1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  padding: 130px 0;
 }
 
-.content{
-    text-align: right;
-    padding-top: 216px;
-    padding-left:950px;
-    padding-right: 180px;
-    height: 808px;
-    
+.banner-flex {
+  display: flex;
+  justify-content: right;
 }
 
-.content h1{
-    font-weight: 700;
-    font-size: 65px;
-    color: #151414;
-    
+.content {
+  text-align: right;
+  width: 500px;
 }
 
-.content-description{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    color: #444343;
-    margin:30px 0;
+.content h1 {
+  font-weight: 600;
+  font-size: 65px;
+  color: #151414;
+}
+
+.content-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444343;
+  margin: 30px 0;
 }
 
 /* Section My failure start */
-.my-failure{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin:130px 0;
+.my-failure {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.my-failure .sad-img{
-    width: 569px;
-    height: 723.3px;
-    margin-left:206px;
-    margin-right:87px;
+.my-failure img {
+  width: 100%;
 }
-.my-failure  .failure-details{}
-.my-failure  .failure-title{
-    width: 288px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
-    color: #151414;
+.my-failure .failure-details {
+  padding: 10px 20px;
 }
-.my-failure  .failure-description{
-    font-size: 16px;
-    line-height: 35px;
-    margin-top:24px;
-    margin-bottom: 16px;
-    color: #444343;
-    
+.my-failure .failure-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #151414;
 }
-.failure-list{
-    color: #444343;
-    line-height: 35px;
-    font-size: 16px;
-
+.my-failure .failure-description {
+  font-size: 16px;
+  line-height: 35px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #444343;
 }
-ol{
-    list-style: none;
+.failure-list {
+  color: #444343;
+  line-height: 35px;
+  font-size: 16px;
 }
-ol li:before{
-    content: '✓';
+ol {
+  list-style: none;
 }
-
+ol li:before {
+  content: "✓";
+}
 
 /* My Plans Section start */
-
 .my-plans{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:110px;
+    text-align: center;
+ 
     
 }
-.my-plans h2{
-    width: 288px;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 47px;
-    color: #151414;
+
+.my-plans h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.my-plans-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* gap: 70px; */
+}
+
+.plans-list {
     text-align: center;
-}
-.plans-list{
-    text-align: center;
-}
-.plans-list h1{
+    width: 250px;
+  }
+
+.plans-list h2 {
     font-weight: 700;
-    font-size:30px;
-    line-height:35px;
-    text-align:center;
-    color:#151414;
-    margin-top:30px;
-    margin-bottom:16px;
-}
-.plans-list h2{
-    font-weight: 500;
     font-size: 25px;
-    line-height: 29px;
+    line-height: 35px;
     text-align: center;
-    color: #737272;
+    color: #151414;
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+.my-plans h3 {
+ 
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 47px;
+  color: #737272;
+  text-align: center;
+}
+
+
+
+/* What i do section styles */
+
+
+.section-description {
+  color: #757575;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.skills-full{
+    background-image: url('../images//myplan-bg.svg');
+    background-repeat: no-repeat;
+}
+.skills{
+   
+}
+.skills h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.skills-list {
+  display: flex;
+  gap: 24px;
+}
+
+.skill {
+  background: #fff;
+  box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.skill-title {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.skill-description {
+  color: #757575;
+}
+
+/* Background image section  */
+
+.writter-mind {
+  background-image: linear-gradient(
+      90deg,
+      #f15b22 0%,
+      rgba(241, 91, 34, 0) 100%
+    ),
+    url("../images/watch.png");
+  width: 1140px;
+  height: 300px;
+  border-radius: 8px;
+  margin: 120px auto;
+}
+
+.writter-mind p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+  padding-top: 68px;
+  padding-left: 63px;
 }
